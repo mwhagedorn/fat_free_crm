@@ -65,3 +65,6 @@ end
 # prototype_legacy_helper, git://github.com/rails/prototype_legacy_helper.git
 # responds_to_parent,      git://github.com/markcatley/responds_to_parent.git
 
+#gem 'ffcrm_tags',:git => 'git://github.com/mwhagedorn/ffcrm_tags.git'
+
+gem 'ffcrm_tags', :require =>"ffcrm_tags", :path =>"/Users/mhagedorn/develop/ffcrm_tags"
