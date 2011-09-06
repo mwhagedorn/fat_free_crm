@@ -67,4 +67,4 @@ end
 
 #gem 'ffcrm_tags',:git => 'git://github.com/mwhagedorn/ffcrm_tags.git'
 
-gem 'ffcrm_tags', :require =>"ffcrm_tags", :path =>"/Users/mhagedorn/develop/ffcrm_tags"
+#gem 'ffcrm_tags', :require =>"ffcrm_tags", :path =>"/Users/mhagedorn/develop/ffcrm_tags"
