@@ -2,11 +2,11 @@ set :application, "ffc.silverchairsolutions.com"
 set :repository,  "git@github.com:mwhagedorn/fat_free_crm.git"
 
 set :scm, 'git'
-#set :deploy_via, :remote_cache
-#set :branch, 'master'
+set :deploy_via, :remote_cache
+set :branch, 'master'
 set :scm_verbose, true
-#set :git_shallow_clone, 1
-set :git_enable_submodules, 1
+set :git_shallow_clone, 1
+#set :git_enable_submodules, 1
 
 set :user, 'mhagedorn'  # Your dreamhost account's username
 set :domain, 'ffc.silverchairsolutions.com'  # Dreamhost servername where your account is located 
