@@ -34,11 +34,6 @@ gem 'paperclip',           :git => 'git://github.com/crossroads/paperclip.git'
 gem 'will_paginate',       '>= 3.0.pre2'
 
 group :development, :test do
-  if RUBY_VERSION.to_f >= 1.9
-    gem 'ruby-debug19'
-  else
-    gem 'ruby-debug'
-  end
   gem 'annotate',           '>= 2.4.0'
   gem 'awesome_print',      '>= 0.3.1'
 
