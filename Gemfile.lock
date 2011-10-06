@@ -137,7 +137,6 @@ DEPENDENCIES
   is_paranoid!
   mysql2 (= 0.2.7)
   paperclip!
-  rack (= 1.2.4)
   rails (= 3.0.3)
   rake (= 0.8.7)
   rspec-rails (>= 2.5.0)
