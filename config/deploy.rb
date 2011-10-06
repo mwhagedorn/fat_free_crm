@@ -32,25 +32,15 @@ set :use_sudo, false
 # these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
-after "deploy:update_code", "deploy:bundle_install"
+ namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
 
-namespace "deploy" do
-  desc "run bundle install"
-  task :bundle_install, :roles =>:app do
-    run "cd #{release_path} && bundle install --local"
-  end
-end
 
-default_environment['PATH']='/usr/lib/ruby/gems/1.8/bin:/home/mhagedorn/.gems/bin:/usr/local/bin:/usr/bin:/bin'
-default_environment['GEM_PATH']='/home/mhagedorn/.gems:/usr/lib/ruby/gems/1.8'
-default_environment['BUNDLE_PATH']='/home/mhagedorn/.bundle'
 
 
 
