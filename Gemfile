@@ -20,7 +20,7 @@ end
 if db_gems[adapter]
   gem *db_gems[adapter]
 else
-  raise "Sorry, the db adapter in database.yml is unknown. Please add it to 'db_gems' in your Gemfile."
+  #raise "Sorry, the db adapter in database.yml is unknown. Please add it to 'db_gems' in your Gemfile."
 end
 # -----------------------------------------------------------------------------
 
