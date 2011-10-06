@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.3'
 gem 'rake',  '0.8.7'
 
 # Loads the database adapter gem based on config/database.yml (Default: mysql2)
@@ -25,7 +25,6 @@ end
 # -----------------------------------------------------------------------------
 
 gem 'acts_as_commentable', '>= 3.0.1'
-# gem 'acts-as-taggable-on', '>= 2.0.6'
 gem 'authlogic',           :git => 'git://github.com/crossroads/authlogic.git', :branch => 'rails3'
 gem 'haml',                '>= 3.1.1'
 gem 'sass',                '>= 3.1.1'
