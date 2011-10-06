@@ -6,7 +6,7 @@ gem 'rake',  '0.8.7'
 # Loads the database adapter gem based on config/database.yml (Default: mysql2)
 # -----------------------------------------------------------------------------
 db_gems = {
-  "mysql2"     => [ "mysql2", "0.2.7" ],  # The latest 0.3.2 doesn't ship with ActiveRecord adapter as it's now part of Rails 3.1.
+  #"mysql2"     => [ "mysql2", "0.2.7" ],  # The latest 0.3.2 doesn't ship with ActiveRecord adapter as it's now part of Rails 3.1.
   "mysql"      => [ "mysql" ],            # With Rails 3.0.x we're supposed to use mysql2 0.2.x release.
   "postgresql" => [ "pg", ">= 0.9.0" ],
   "sqlite3"    => [ "sqlite3" ]
@@ -49,7 +49,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', '0.2.7'
 end
 # Gem watch list:
 #---------------------------------------------------------------------
