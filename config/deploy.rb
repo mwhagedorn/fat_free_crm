@@ -6,7 +6,6 @@ set :deploy_via, :remote_cache
 set :branch, 'master'
 set :scm_verbose, true
 set :git_shallow_clone, 1
-#set :git_enable_submodules, 1
 
 set :user, 'mhagedorn'  # Your dreamhost account's username
 set :domain, 'ffc.silverchairsolutions.com'  # Dreamhost servername where your account is located 
@@ -36,7 +35,7 @@ set :use_sudo, false
    task :start do ; end
    task :stop do ; end
    task :restart, :roles => :app, :except => { :no_release => true } do
-     run "touch #{File.join(current_path,'tmp','restart.txt')}"
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
  end
 

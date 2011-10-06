@@ -48,7 +48,9 @@ group :development, :test do
   gem 'factory_girl',       '>= 1.3.3'
 end
 
-
+group :production do
+  gem 'mysql2'
+end
 # Gem watch list:
 #---------------------------------------------------------------------
 # gem 'authlogic',         :git => 'git://github.com/crossroads/authlogic.git', :branch => 'rails3'

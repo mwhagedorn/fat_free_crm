@@ -85,6 +85,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mysql2 (0.3.7)
     polyglot (0.3.2)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -152,6 +153,7 @@ DEPENDENCIES
   ffcrm_tags!
   haml (>= 3.1.1)
   is_paranoid!
+  mysql2
   paperclip!
   rails (= 3.0.7)
   rake (= 0.8.7)
