@@ -52,7 +52,6 @@ end
 group :production do
   gem 'mysql2', '0.2.7'
 end
-i
 # Gem watch list:
 #---------------------------------------------------------------------
 # gem 'authlogic',         :git => 'git://github.com/crossroads/authlogic.git', :branch => 'rails3'
