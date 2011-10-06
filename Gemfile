@@ -45,6 +45,7 @@ end
 
 group :production do
   gem 'mysql2', '0.2.7'
+  gem 'acts-as-taggable-on','2.1.1'
 end
 # Gem watch list:
 #---------------------------------------------------------------------
