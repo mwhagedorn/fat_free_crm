@@ -6,22 +6,6 @@ gem 'rake',  '0.8.7'
 # Loads the database adapter gem based on config/database.yml (Default: mysql2)
 # -----------------------------------------------------------------------------
 
-db_gems = {
-  "mysql"      => [ "mysql" ],            # With Rails 3.0.x we're supposed to use mysql2 0.2.x release.
-  "postgresql" => [ "pg", ">= 0.9.0" ],
-  "sqlite3"    => [ "sqlite3" ]
-}
-adapter = if File.exists?(db_config = File.join(File.dirname(__FILE__),"config","database.yml"))
-  # Fetch any configured adapters from config/database.yml
-  db = YAML.load_file(db_config); (db["development"] || db["test"] || db["production"])["adapter"]
-else
-  "mysql2"
-end
-if db_gems[adapter]
-  gem *db_gems[adapter]
-else
-  #raise "Sorry, the db adapter in database.yml is unknown. Please add it to 'db_gems' in your Gemfile."
-end
 # -----------------------------------------------------------------------------
 
 gem 'acts_as_commentable', '>= 3.0.1'
@@ -40,6 +24,7 @@ group :development, :test do
   gem "rspec-rails",        '>= 2.5.0'
   gem 'faker',              '>= 0.9.5'
   gem 'factory_girl',       '>= 1.3.3'
+  gem 'sqlite3'
 end
 
 
