@@ -1,3 +1,6 @@
+directory = File.expand_path(File.dirname(__FILE__))
+require File.join(directory,'capistrano_database_yml')
+
 set :application, "ffc.silverchairsolutions.com"
 set :repository,  "git@github.com:mwhagedorn/fat_free_crm.git"
 
