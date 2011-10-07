@@ -61,6 +61,10 @@ end
 after "deploy:rollback:revision", "bundler:install"
 after "deploy:update_code", "bundler:install"
  
+default_environment['PATH']='/usr/lib/ruby/gems/1.8/bin:/home/mhagedorn/.gems/bin:/usr/local/bin:/usr/bin:/bin'
+default_environment['GEM_PATH']='/home/mhagedorn/.gems:/usr/lib/ruby/gems/1.8'
+
+
 
 
 
