@@ -8,3 +8,4 @@
   = render sidebar
   - rescue MissingTemplate
 = render "common/recently"
+= hook(:sidebar_bottom, self)

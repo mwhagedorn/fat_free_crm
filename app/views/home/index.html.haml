@@ -11,8 +11,12 @@
     = render :partial => "activity", :collection => @activities
   - else
     #{t :no_activity_records}
+  = styles_for
+  = hook(:tagged_results,self,:accounts =>@accounts, :contacts =>@contacts, :leads =>@leads, :opportunities =>@opportunities,:campaigns=>@campaigns)
+
 
 #export= render "common/export"
+
 /
   Check out HTML source to view the output of the hook if you have sample plugin installed
   http://github.com/michaeldv/crm_sample_plugin/tree/master
