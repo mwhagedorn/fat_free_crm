@@ -46,8 +46,7 @@
           - else
             %span.cool= t(:task_due_today)
     &ndash;
-    =link_to "Send To OF","omnifocus:///add?name=#{h(pending.asset.name)}"
-    =#omnifocus:///add?name=test%20message&note=
+    =link_to "Send To OF","omnifocus:///add?name=#{h(pending.asset.name)}"tai
 
     - unless pending.background_info.blank?
       %div
