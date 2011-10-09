@@ -96,13 +96,14 @@ task_calendar_with_time: true
 
 # Sets the email dropbox feature, this are the connections settings for
 # the imap account, server and folders.
+#change the @..@ items to match
 #------------------------------------------------------------------------------
 :email_dropbox:
-  :server                     : mail.silverchairsolutions.com         # IMAP server name.
+  :server                     :@MAIL.BLAH.COM@         # IMAP server name.
   :port                       : 143          # IMAP server port number.
   :ssl                        : false             # True for secure IMAP connection, false othewise.
-  :address                    : ffcrm@silverchairsolutions.com         # Dropbox email address.
-  :user                       : ffcrm@silverchairsolutions.com            # User to login to the IMAP server.
+  :address                    : @MYDDRESS@MYSERVER.COM@         # Dropbox email address.
+  :user                       : @MYUSER@            # User to login to the IMAP server.
   :password                   : <%=Capistrano::CLI.ui.ask("Enter Dropbox IMAP password: ")%>        # Password to login to the IMAP server.
   :scan_folder                : INBOX          # Folder to scan for dropbox messages.
 #  :move_to_folder             : @IMAP_MOVE@            # Optional: folder to move processed messages to.
