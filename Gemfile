@@ -1,36 +1,36 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
-gem 'rake',  '0.8.7'
+gem 'rails', '~>3.0.3'
+gem 'rake',  '~>0.8.7'
 
 # Loads the database adapter gem based on config/database.yml (Default: mysql2)
 # -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
 
-gem 'acts_as_commentable', '>= 3.0.1'
+gem 'acts_as_commentable', '~> 3.0.1'
 gem 'authlogic',           :git => 'git://github.com/crossroads/authlogic.git', :branch => 'rails3'
-gem 'haml',                '>= 3.1.1'
-gem 'sass',                '>= 3.1.1'
+gem 'haml',                '~> 3.1.1'
+gem 'sass',                '~> 3.1.1'
 gem 'is_paranoid',         :git => 'git://github.com/crossroads/is_paranoid.git', :branch => 'rails3'
 gem 'paperclip',           :git => 'git://github.com/crossroads/paperclip.git'
-gem 'will_paginate',       '>= 3.0.pre2'
+gem 'will_paginate',       '~> 3.0.pre2'
 
 group :development, :test do
-  gem 'annotate',           '>= 2.4.0'
-  gem 'awesome_print',      '>= 0.3.1'
+  gem 'annotate',           '~> 2.4.0'
+  gem 'awesome_print',      '~> 0.3.1'
 
   gem 'test-unit', '1.2.3' if RUBY_VERSION.to_f >= 1.9
-  gem "rspec-rails",        '>= 2.5.0'
-  gem 'faker',              '>= 0.9.5'
-  gem 'factory_girl',       '>= 1.3.3'
+  gem "rspec-rails",        '~> 2.5.0'
+  gem 'faker',              '~> 0.9.5'
+  gem 'factory_girl',       '~> 1.3.3'
   gem 'sqlite3'
 end
 
 
 group :production do
-  gem 'mysql2', '0.2.7'
-  gem 'acts-as-taggable-on','2.1.1'
+  gem 'mysql2', '~>0.2.7'
+  gem 'acts-as-taggable-on','~>2.1.1'
 end
 # Gem watch list:
 #---------------------------------------------------------------------
